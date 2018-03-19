@@ -1,0 +1,96 @@
+commit 76c5941305273f864eeb4fe5924af15ef96da710
+Author: Jukka Rautaoja <jukka.rautaoja@helsinki.fi>
+Date:   Mon Mar 19 11:58:14 2018 +0200
+
+    jeejee
+
+ file1.txt | 0
+ file2.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 68139b154a294c4040cc76af21f667c270d3516c
+Author: Jukka Rautaoja <jukka.rautaoja@helsinki.fi>
+Date:   Mon Mar 19 11:56:25 2018 +0200
+
+    juttuiii
+
+ file1.txt | 0
+ file2.txt | 0
+ file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 3e34f63008271dc17f98c3ce5b386236556f1c4b
+Author: Jukka Rautaoja <jukka.rautaoja@helsinki.fi>
+Date:   Mon Mar 19 11:52:37 2018 +0200
+
+    yeaboy
+
+ eka.txt    | 3 ++-
+ kolmas.txt | 2 +-
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+commit b625ae8eb0148fb10d508b9fe530b05620808d56
+Author: Jukka Rautaoja <jukka.rautaoja@helsinki.fi>
+Date:   Mon Mar 19 11:48:59 2018 +0200
+
+    nimenmuutos
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 4d0400e3e7270128cdb8a336778a9ab8b48da6c7
+Author: Jukka Rautaoja <jukka.rautaoja@helsinki.fi>
+Date:   Mon Mar 19 11:47:36 2018 +0200
+
+    toinen deleted
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit f46d41d54be46845e30ba6d62bbc9a9846cc74a8
+Author: Jukka Rautaoja <jukka.rautaoja@helsinki.fi>
+Date:   Mon Mar 19 11:31:23 2018 +0200
+
+    tehtiin stuffii
+
+ stuff/yeaboy.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit d248d300a22e8f022a2990f1f1c853df9dd17f79
+Author: Jukka Rautaoja <jukka.rautaoja@helsinki.fi>
+Date:   Mon Mar 19 11:30:10 2018 +0200
+
+    muutos toinen.txt ja kolmas.txt
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 2bc4fc7744bfb86250e4146dff46aa99e74313f0
+Author: Jukka Rautaoja <jukka.rautaoja@helsinki.fi>
+Date:   Mon Mar 19 11:28:20 2018 +0200
+
+    luotu kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 13de4828ffa798ef085c63ec4e96970b8b540d4a
+Author: Jukka Rautaoja <jukka.rautaoja@helsinki.fi>
+Date:   Mon Mar 19 11:22:36 2018 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 816a2f168b1b3537187937101eca36ecbcc4f1a7
+Author: Jukka Rautaoja <jukka.rautaoja@helsinki.fi>
+Date:   Mon Mar 19 11:19:27 2018 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
