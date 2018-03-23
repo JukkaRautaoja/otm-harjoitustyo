@@ -1,7 +1,7 @@
 ## Työaikakirjanpito
 
 Päivä | Aika | Mitä tein
------------- | -------------
+------------ | ------------- | ------------
 19.3.  |  10  |    Loin koodin pelin laatojen liikuttamiseen, graafisen 
 		 käyttöliittymän.
 20.3.   |  8	| Sain graafisen käyttöliittymän lähes kuntoon, tein 
