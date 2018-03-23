@@ -5,6 +5,5 @@
 
 [gitlog.txt](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
-Tämä on harjoitustyön readme tiedosto, jossa on selitystä miten homma 
-toimii. Työ toimii, kunhan sen saa **valmiiksi**. Erityisesti *aihe ja 
-nimi* pitäisi valita. 
+[maarittelydokumentti.md](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/maarittelydokumentti.md)
+Tämä on harjoitustyön readme tiedosto.
