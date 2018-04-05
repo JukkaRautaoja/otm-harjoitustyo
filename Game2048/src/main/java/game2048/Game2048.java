@@ -142,6 +142,7 @@ public class Game2048 extends Application{
            if (event.getCode().equals(KeyCode.UP)) {
                 board.moveUp();
                 mainLay.setCenter(updateBoard());
+                System.out.println(board.toString());
                 
             }else if (event.getCode().equals(KeyCode.DOWN)) {
                 board.moveDown();

@@ -56,7 +56,8 @@ public class Board {
         this.array = new int[4][4];
         this.array[0][0] = 4;
     }
-
+    
+    //moves eveything to right as much as possible
     public void moveRight() {
         for (int i = 0; i < 3; i++) {
             for (int y = 0; y < 4; y++) {
@@ -72,7 +73,8 @@ public class Board {
         checkMax();
         newValue();
     }
-
+    
+    //moves eveything to up as much as possible
     public void moveUp() {
         for (int i = 0; i < 3; i++) {
             for (int y = 0; y < 3; y++) {
@@ -89,6 +91,7 @@ public class Board {
         newValue();
     }
 
+    //moves eveything to down as much as possible
     public void moveDown() {
         for (int i = 0; i < 3; i++) {
             for (int y = 3; y > 0; y--) {
@@ -105,6 +108,7 @@ public class Board {
         newValue();
     }
 
+    //moves eveything to left as much as possible
     public void moveLeft() {
         for (int i = 0; i < 3; i++) {
             for (int y = 0; y < 4; y++) {
@@ -143,6 +147,7 @@ public class Board {
         }
     }
 
+    //toString for board's array
     @Override
     public String toString() {
         return "" + array[0][0] + " " + array[0][1] + " " + array[0][2] + " " + array[0][3] + "\n" + "\n"
