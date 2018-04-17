@@ -7,3 +7,4 @@ Päivä | Aika | Mitä tein
 21.3.  |   4  |    Sain graafisen käyttöliittymän täysin toimimaan ja muutkin ei toivotut bugit laattojen liikutukseen liittyen.
 27.3. | 0,5 | Sovellus gittiin ja muutto maven projektiksi.
 1.4. | 1 | Testejä pelin lautaa varten.
+17.4. | 0,5 | Pelin lopun tarkastustesti päivitetty.
