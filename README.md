@@ -12,6 +12,31 @@ Tämä on ohjelmistotekniikan menetelmien harjoitustyö. Aiheena on peli 2048, j
 
 [release jar tiedostolle](https://github.com/JukkaRautaoja/otm-harjoitustyo/releases/tag/viikko5)
 
+#### Komentorivitoiminnot
+##### Testaus
+Testit suoritetaan komennolla:
+
+*mvn test*
+
+Testikattavuusraportti luodaan komennolla:
+
+*mvn jacoco:report*
+#####  Jarin generointi
+
+Komento "*mvn package*" generoi hakemistoon target suoritettavan jar-tiedoston OtmTodoApp-1.0-SNAPSHOT.jar
+##### JavaDoc
+JavaDoc generoidaan komennolla:
+
+*mvn javadoc:javadoc*
+
+JavaDocia voi tarkastella avaamalla selaimella tiedosto target/site/apidocs/index.html
+##### Checkstyle
+Tiedostoon checkstyle.xml määrittelemät tarkistukset suoritetaan komennolla:
+
+*mvn jxr:jxr checkstyle:checkstyle*
+ 
+Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto target/site/checkstyle.html
+
 
 
 
