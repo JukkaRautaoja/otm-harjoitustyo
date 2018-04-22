@@ -23,7 +23,7 @@ Testikattavuusraportti luodaan komennolla:
 *mvn jacoco:report*
 #####  Jarin generointi
 
-Komento "*mvn package*" generoi hakemistoon target suoritettavan jar-tiedoston OtmTodoApp-1.0-SNAPSHOT.jar
+Komento "*mvn package*" generoi hakemistoon target suoritettavan jar-tiedoston Game2048-1.0-SNAPSHOT.jar
 ##### JavaDoc
 JavaDoc generoidaan komennolla:
 
