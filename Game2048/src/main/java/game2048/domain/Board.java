@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package game2048;
+package game2048.domain;
 
 import java.util.Random;
 import javafx.scene.control.Button;
@@ -35,7 +35,7 @@ public class Board {
             }
         }
     }
-    
+
     //returns current largest number in tiles
     public int getMax() {
         return this.max;
@@ -50,22 +50,22 @@ public class Board {
     public void setBoard(int[][] newBoard) {
         this.array = newBoard;
     }
-    
+
     //resets the board for a new game
-    public void restart(){
+    public void restart() {
         this.array = new int[4][4];
         this.array[0][0] = 4;
     }
-    
+
     //moves eveything to right as much as possible
     public void moveRight() {
         for (int i = 0; i < 3; i++) {
             for (int y = 0; y < 4; y++) {
                 for (int x = 3; x > 0; x--) {
-                    int value = array[y][x-1];
+                    int value = array[y][x - 1];
                     if (array[y][x - 1] == array[y][x] || array[y][x] == 0) {
                         array[y][x] += value;
-                        array[y][x-1] = 0;
+                        array[y][x - 1] = 0;
                     }
                 }
             }
@@ -73,7 +73,7 @@ public class Board {
         checkMax();
         newValue();
     }
-    
+
     //moves eveything to up as much as possible
     public void moveUp() {
         for (int i = 0; i < 3; i++) {

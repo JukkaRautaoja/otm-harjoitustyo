@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package db;
+package Game2048.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -16,12 +16,14 @@ import java.util.List;
  *
  * @author jukka
  */
-public class ScoreDao implements Dao<Score, Integer>{
-     private Database database;
+public class ScoreDao implements Dao<Score, Integer> {
+
+    private Database database;
 
     public ScoreDao(Database database) {
         this.database = database;
     }
+
     @Override
     public void delete(Integer key) throws SQLException {
         Connection conn = database.getConnection();
@@ -33,6 +35,7 @@ public class ScoreDao implements Dao<Score, Integer>{
         stmt.close();
         conn.close();
     }
+
     private Score save(Score score) throws SQLException {
 
         Connection conn = database.getConnection();
@@ -41,7 +44,6 @@ public class ScoreDao implements Dao<Score, Integer>{
                 + " VALUES (?, ?)");
         stmt.setString(1, score.getName());
         stmt.setInt(2, score.getMaxScore());
-        
 
         stmt.executeUpdate();
         stmt.close();
@@ -49,7 +51,6 @@ public class ScoreDao implements Dao<Score, Integer>{
         stmt = conn.prepareStatement("SELECT * FROM Score"
                 + " WHERE name = ?");
         stmt.setString(1, score.getName());
-        
 
         ResultSet rs = stmt.executeQuery();
         rs.next();
@@ -63,6 +64,7 @@ public class ScoreDao implements Dao<Score, Integer>{
 
         return s;
     }
+
     private Score update(Score score) throws SQLException {
 
         Connection conn = database.getConnection();
@@ -70,7 +72,6 @@ public class ScoreDao implements Dao<Score, Integer>{
                 + " name = ? WHERE id = ?");
         stmt.setInt(1, score.getId());
         stmt.setString(2, score.getName());
-        
 
         stmt.executeUpdate();
 
@@ -79,19 +80,21 @@ public class ScoreDao implements Dao<Score, Integer>{
 
         return score;
     }
-     @Override
-     public Score saveOrUpdate(Score object) throws SQLException {
-        if (object.getId()==null) {
+
+    @Override
+    public Score saveOrUpdate(Score object) throws SQLException {
+        if (object.getId() == null) {
             return save(object);
         } else {
-            
+
             return update(object);
         }
     }
+
     @Override
     public List<Score> findAll() throws SQLException {
         List<Score> scores = new ArrayList<>();
-        Connection connection =database.getConnection();
+        Connection connection = database.getConnection();
         PreparedStatement stmt = connection.prepareStatement("SELECT * FROM Score");
         ResultSet rs = stmt.executeQuery();
 
@@ -106,6 +109,7 @@ public class ScoreDao implements Dao<Score, Integer>{
         connection.close();
         return scores;
     }
+
     @Override
     public Score findOne(Integer key) throws SQLException {
         Connection conn = database.getConnection();
@@ -127,9 +131,10 @@ public class ScoreDao implements Dao<Score, Integer>{
 
         return score;
     }
+
     public List<Score> findTop10() throws SQLException {
         List<Score> scores = new ArrayList<>();
-        Connection connection =database.getConnection();
+        Connection connection = database.getConnection();
         PreparedStatement stmt = connection.prepareStatement("SELECT * FROM Score ORDER BY Score.maxScore DESC LIMIT 10");
         ResultSet rs = stmt.executeQuery();
 
@@ -144,5 +149,5 @@ public class ScoreDao implements Dao<Score, Integer>{
         connection.close();
         return scores;
     }
-    
+
 }

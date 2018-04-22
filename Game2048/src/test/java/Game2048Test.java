@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-import game2048.Board;
+import game2048.domain.Board;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -70,5 +70,21 @@ public class Game2048Test {
         board.getBoard()[2][2]=4;
         board.moveUp();
         assertEquals(board.getBoard()[0][2], 8);
+    }
+    @Test
+    public void gameHasEnded(){
+        int filler=0;
+        for (int i = 0; i < 4; i++) {
+            filler++;
+            for (int j = 0; j < 4; j++) {
+                if (filler%2==0){
+                    board.getBoard()[i][j]=2;
+                }else{
+                    board.getBoard()[i][j]=4;
+                }
+                filler++;
+            }
+        }
+        assertEquals(board.end(), true);
     }
 }

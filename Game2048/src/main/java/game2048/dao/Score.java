@@ -3,28 +3,33 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package db;
+package Game2048.dao;
 
 /**
  *
  * @author jukka
  */
 public class Score {
+
     private Integer id;
     private String name;
     private Integer maxScore;
-    public Score(Integer id, String name, Integer max){
-        this.id=id;
-        this.name=name;
-        this.maxScore=max;
+
+    public Score(Integer id, String name, Integer max) {
+        this.id = id;
+        this.name = name;
+        this.maxScore = max;
     }
-    public Integer getId(){
+
+    public Integer getId() {
         return this.id;
     }
-    public String getName(){
+
+    public String getName() {
         return this.name;
     }
-    public Integer getMaxScore(){
+
+    public Integer getMaxScore() {
         return this.maxScore;
     }
 }
