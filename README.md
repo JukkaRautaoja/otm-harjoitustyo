@@ -27,11 +27,13 @@ Komento "mvn package" generoi hakemistoon target suoritettavan jar-tiedoston Otm
 JavaDoc generoidaan komennolla:
 
 mvn javadoc:javadoc
+
 JavaDocia voi tarkastella avaamalla selaimella tiedosto target/site/apidocs/index.html
 ##### Checkstyle
 Tiedostoon checkstyle.xml määrittelemät tarkistukset suoritetaan komennolla:
 
- mvn jxr:jxr checkstyle:checkstyle
+mvn jxr:jxr checkstyle:checkstyle
+ 
 Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto target/site/checkstyle.html
 
 
