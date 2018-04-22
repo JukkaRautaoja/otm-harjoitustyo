@@ -20,7 +20,7 @@ Testit suoritetaan komennolla:
 
 Testikattavuusraportti luodaan komennolla:
 
-*mvn jacoco:report*
+*mvn test jacoco:report*
 #####  Jarin generointi
 
 Komento "*mvn package*" generoi hakemistoon target suoritettavan jar-tiedoston Game2048-1.0-SNAPSHOT.jar
