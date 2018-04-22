@@ -113,8 +113,9 @@ public class ScoreDao implements Dao<Score, Integer> {
     @Override
     public Score findOne(Integer key) throws SQLException {
         Connection conn = database.getConnection();
-        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM Score");
+        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM Score WHERE id = ?");
         stmt.setInt(1, key);
+        
 
         ResultSet rs = stmt.executeQuery();
         boolean hasOne = rs.next();

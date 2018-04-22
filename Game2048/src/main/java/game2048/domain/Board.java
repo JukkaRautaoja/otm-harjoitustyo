@@ -126,7 +126,7 @@ public class Board {
     }
 
     //random generates new value after each move if possible
-    public void newValue() {
+    public boolean newValue() {
         int counter = 0;
         for (int y = 0; y < 4; y++) {
             for (int x = 0; x < 4; x++) {
@@ -141,10 +141,11 @@ public class Board {
                 int newX = random.nextInt(4);
                 if (array[newY][newX] == 0) {
                     array[newY][newX] = 2;
-                    break;
+                    return true;
                 }
             }
         }
+        return false;
     }
 
     //toString for board's array
