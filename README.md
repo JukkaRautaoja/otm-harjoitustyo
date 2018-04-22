@@ -16,23 +16,24 @@ Tämä on ohjelmistotekniikan menetelmien harjoitustyö. Aiheena on peli 2048, j
 ##### Testaus
 Testit suoritetaan komennolla:
 
-mvn test
+*mvn test*
+
 Testikattavuusraportti luodaan komennolla:
 
-mvn jacoco:report
+*mvn jacoco:report*
 #####  Jarin generointi
 
-Komento "mvn package" generoi hakemistoon target suoritettavan jar-tiedoston OtmTodoApp-1.0-SNAPSHOT.jar
+Komento "*mvn package*" generoi hakemistoon target suoritettavan jar-tiedoston OtmTodoApp-1.0-SNAPSHOT.jar
 ##### JavaDoc
 JavaDoc generoidaan komennolla:
 
-mvn javadoc:javadoc
+*mvn javadoc:javadoc*
 
 JavaDocia voi tarkastella avaamalla selaimella tiedosto target/site/apidocs/index.html
 ##### Checkstyle
 Tiedostoon checkstyle.xml määrittelemät tarkistukset suoritetaan komennolla:
 
-mvn jxr:jxr checkstyle:checkstyle
+*mvn jxr:jxr checkstyle:checkstyle*
  
 Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto target/site/checkstyle.html
 
