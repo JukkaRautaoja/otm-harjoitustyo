@@ -81,6 +81,7 @@ public class Game2048 extends Application {
             for (int y = 1; y <= 4; y++) {
                 String helper = String.valueOf(board.getBoard()[x - 1][y - 1]);
                 Button a = new Button(helper);
+                a.setStyle("-fx-base: #ee2211;");
                 a.setMinSize(80, 80);
                 a.setMaxSize(80, 80);
                 a.setPrefSize(80, 80);
@@ -173,6 +174,7 @@ public class Game2048 extends Application {
             for (int y = 1; y <= 4; y++) {
                 String helper = String.valueOf(board.getBoard()[x - 1][y - 1]);
                 Button a = new Button(helper);
+                a.setStyle("-fx-base: #ee2211;");
                 a.setMinSize(80, 80);
                 a.setMaxSize(80, 80);
                 a.setPrefSize(80, 80);
