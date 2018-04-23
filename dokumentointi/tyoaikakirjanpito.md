@@ -8,4 +8,6 @@ Päivä | Aika | Mitä tein
 27.3. | 0,5 | Sovellus gittiin ja muutto maven projektiksi.
 1.4. | 1 | Testejä pelin lautaa varten.
 17.4. | 0,5 | Pelin lopun tarkastustesti päivitetty.
-Total | 24 | Total time used for project
+22.4. | 3 | Testit 100% kattavuuteen ja scoreDaon parantelu
+23.4. | 0,5 | Punaiset värit nappeihin ja jarin generointi
+Total | 27,5 | Total time used for project
