@@ -44,5 +44,5 @@ Tässä osiossa on sekvenssikaaviot pelin päätoiminnallisuuksille selventämä
 
 Ylöspäin liikkumisen sekvenssikaavio.
 
-![Sekvenssikaavio moveUp](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/20180423_100041.png)
+![Sekvenssikaavio moveUp](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/moveupsekvenssi.png)
 
