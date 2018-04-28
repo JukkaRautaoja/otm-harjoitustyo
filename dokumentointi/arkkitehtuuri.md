@@ -42,9 +42,15 @@ Tiedontallennuksen koodin toteutus löytyy game2048.dao kansiosta eli tietokanta
 
 Tässä osiossa on sekvenssikaaviot pelin päätoiminnallisuuksille selventämään niiden toimintalogiikkaa. Monet metodit ovat niin sanottuja *void-metodeja* eivätkä täten palauta mitään arvoa. Loput metodit, jotka eivät ole voideja, ovat *boolean* eli totuusarvon palauttavia metodeja. 
 
-Ylöspäin liikkumisen sekvenssikaavio.
+Ylöspäin liikkumisen sekvenssikaavio:
 
 ![Sekvenssikaavio moveUp](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/moveupsek.png)
+
+Pelin loppumisen tarkistus sekvenssikaavio:
+
 ![sekvenssikaavio end](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/endgamesek.png)
+
+Tietokantaan tuloksen lisäämisen sekvenssikaavio:
+
 ![db score lisäys](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/addtodbsek.png)
 
