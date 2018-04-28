@@ -2,9 +2,7 @@
 
 #### Rakenne
 
-Ohjelman rakenteessa on kolmetasoa kerrosarkkitehtuuria, ja koodin pakkausrakenne on seuraava:
-
-Pakkaus *game2048.ui* sisältää JavaFX:llä toteutetun käyttöliittymän *game2048.domain* sovelluslogiikan ja *game2048.dao* tietojen pysyväistallennuksesta vastaavan koodin tietokantaa hyödyntäen.
+Ohjelman rakenteessa on kolmetasoa kerrosarkkitehtuuria, ja koodin pakkausrakenne on seuraavanlainen. Pakkaus *game2048.ui* sisältää JavaFX:llä toteutetun käyttöliittymän *game2048.domain* sovelluslogiikan ja *game2048.dao* tietojen pysyväistallennuksesta vastaavan koodin tietokantaa hyödyntäen.
 
 #### Käyttöliittymä
 
