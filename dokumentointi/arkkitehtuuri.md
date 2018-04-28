@@ -30,15 +30,19 @@ Toiminnot ovat:
 5. Pelin loppumisen tarkistus.
   *public boolean end()*
   
-Toimintaa kuvaa luokka/pakkauskaavio:
+Toimintaa kuvaava luokka/pakkauskaavio:
   
   ![Luokkakaavio](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/otmpakkauskaavio.jpg)
 
 #### Tiedon pysyväistallennus
 
-Tiedontallennuksen koodin toteutus löytyy game2048.dao kansiosta eli tietokantaan tallentava koodi *dao-rajapinnan* avulla tehtynä. Piste *Score* olio lisätään tietokantaan hyödyntäen *ScoreDao-luokkaa*.
+Tiedontallennuksen koodin toteutus löytyy game2048.dao kansiosta eli tietokantaan tallentava koodi *dao-rajapinnan* avulla tehtynä. Piste *Score* olio lisätään tietokantaan hyödyntäen *ScoreDao-luokkaa*. *ScoreDao* pystytään myös poistamaan, päivittämään ja hakemaan tietoa tietokannasta. 
 
+#### Päätoiminnallisuudet
 
+Tässä osiossa on sekvenssikaaviot pelin päätoiminnallisuuksille selventämään niiden toimintalogiikkaa. Monet metodit ovat niin sanottuja *void-metodeja* eivätkä täten palauta mitään arvoa. Loput metodit, jotka eivät ole voideja, ovat *boolean* eli totuusarvon palauttavia metodeja. 
+
+Ylöspäin liikkumisen sekvenssikaavio.
 
 ![Sekvenssikaavio moveUp](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/20180423_100041.png)
 
