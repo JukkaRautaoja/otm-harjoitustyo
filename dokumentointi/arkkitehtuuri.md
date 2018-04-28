@@ -32,7 +32,7 @@ Toiminnot ovat:
   
 Toimintaa kuvaava luokka/pakkauskaavio:
   
-  ![Luokkakaavio](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/otmpakkauskaavio.jpg)
+  ![Luokkakaavio](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/otmpakkauskaavio.jpg)
 
 #### Tiedon pysyväistallennus
 
