@@ -51,5 +51,5 @@ Tietokantaan tuloksen lisäämisen sekvenssikaavio:
 
 ![db score lisäys](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/addtodbsek.png)
 
-Mainista pyydetään lisätä pelaajan tulos, kun pelaaja klikkaa lisäys nappulaa kirjoitettuaan nimensä. Luodaan ScoreDao olio, joka hoitaa tiedontallenuksen tietokantaan *saveOrUpdate()* ja *save()* metodien avulla. Lopuksi palautetaan tallennetun pelaajan tiedot.
+*Main*ista pyydetään lisätä pelaajan tulos, kun pelaaja klikkaa lisäys nappulaa kirjoitettuaan nimensä. Luodaan ScoreDao olio, joka hoitaa tiedontallenuksen tietokantaan *saveOrUpdate()* ja *save()* metodien avulla. Lopuksi palautetaan tallennetun pelaajan tiedot.
 
