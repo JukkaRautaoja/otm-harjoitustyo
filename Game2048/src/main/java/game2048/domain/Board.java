@@ -17,7 +17,11 @@ public class Board {
     private int[][] array;
     private Random random;
     private int max;
-
+    
+    /**
+     * Constructor of the board.
+     * Creates new Board.
+     */
     public Board() {
         this.array = new int[4][4];
         this.array[0][0] = 4;
@@ -25,7 +29,9 @@ public class Board {
         this.random = new Random();
     }
 
-    //returns largest number in tiles
+    /**
+     * Check largest number in tiles and sets it as current max.
+     */
     public void checkMax() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
@@ -36,28 +42,41 @@ public class Board {
         }
     }
 
-    //returns current largest number in tiles
+    /**
+     * Returns current largest number in tiles.
+     * @return Maximum value on the board
+     */
     public int getMax() {
         return this.max;
     }
 
-    //returns the array of the board
+    /**
+     * Returns the array of the board.
+     * @return The two dimension array of the board
+     */
     public int[][] getBoard() {
         return this.array;
     }
 
-    //sets given board
+    /**
+     * Sets given board.
+     * @param newBoard New board for the game that is given
+     */
     public void setBoard(int[][] newBoard) {
         this.array = newBoard;
     }
 
-    //resets the board for a new game
+    /**
+     * Resets the board for a new game.
+     */
     public void restart() {
         this.array = new int[4][4];
         this.array[0][0] = 4;
     }
 
-    //moves eveything to right as much as possible
+    /**
+     * Moves eveything to right as much as possible.
+     */
     public void moveRight() {
         for (int i = 0; i < 3; i++) {
             for (int y = 0; y < 4; y++) {
@@ -74,7 +93,9 @@ public class Board {
         newValue();
     }
 
-    //moves eveything to up as much as possible
+    /**
+     * Moves eveything to up as much as possible.
+     */
     public void moveUp() {
         for (int i = 0; i < 3; i++) {
             for (int y = 0; y < 3; y++) {
@@ -91,7 +112,9 @@ public class Board {
         newValue();
     }
 
-    //moves eveything to down as much as possible
+    /**
+     * Moves eveything to down as much as possible.
+     */
     public void moveDown() {
         for (int i = 0; i < 3; i++) {
             for (int y = 3; y > 0; y--) {
@@ -108,7 +131,9 @@ public class Board {
         newValue();
     }
 
-    //moves eveything to left as much as possible
+    /**
+     * Moves eveything to left as much as possible.
+     */
     public void moveLeft() {
         for (int i = 0; i < 3; i++) {
             for (int y = 0; y < 4; y++) {
@@ -125,7 +150,10 @@ public class Board {
         newValue();
     }
 
-    //random generates new value after each move if possible
+    /**
+     * Randomly generates new value after each move, if it is possible.
+     * @return True if the board can have a new value.
+     */
     public boolean newValue() {
         int counter = 0;
         for (int y = 0; y < 4; y++) {
@@ -148,7 +176,9 @@ public class Board {
         return false;
     }
 
-    //toString for board's array
+    /**
+     * toString for board's array
+     */
     @Override
     public String toString() {
         return "" + array[0][0] + " " + array[0][1] + " " + array[0][2] + " " + array[0][3] + "\n" + "\n"
@@ -157,7 +187,10 @@ public class Board {
                 + array[3][0] + " " + array[3][1] + " " + array[3][2] + " " + array[3][3];
     }
 
-    //checks if the game has ended
+    /**
+     * Checks if the game has ended
+     * @return True if the game has ended.
+     */
     public boolean end() {
         if (max == 2048) {
             return true;

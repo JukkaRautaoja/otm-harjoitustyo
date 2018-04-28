@@ -19,11 +19,20 @@ import java.util.List;
 public class ScoreDao implements Dao<Score, Integer> {
 
     private Database database;
-
+    
+    /**
+     * Constructor for ScoreDao.
+     * @param database 
+     */
     public ScoreDao(Database database) {
         this.database = database;
     }
 
+    /**
+     * Deletes Score with the given id.
+     * @param key Id for which one to delete
+     * @throws SQLException 
+     */
     @Override
     public void delete(Integer key) throws SQLException {
         Connection conn = database.getConnection();
@@ -35,7 +44,13 @@ public class ScoreDao implements Dao<Score, Integer> {
         stmt.close();
         conn.close();
     }
-
+    
+    /**
+     * Saves given score to the database
+     * @param score
+     * @return Saved score
+     * @throws SQLException 
+     */
     private Score save(Score score) throws SQLException {
 
         Connection conn = database.getConnection();
@@ -65,6 +80,12 @@ public class ScoreDao implements Dao<Score, Integer> {
         return s;
     }
 
+    /**
+     * Updates the score matching the given score
+     * @param score Update info 
+     * @return
+     * @throws SQLException 
+     */
     private Score update(Score score) throws SQLException {
 
         Connection conn = database.getConnection();
@@ -81,6 +102,12 @@ public class ScoreDao implements Dao<Score, Integer> {
         return score;
     }
 
+    /**
+     * Checks whether to update or to save a score
+     * @param object Score that will be saved or updated
+     * @return
+     * @throws SQLException 
+     */
     @Override
     public Score saveOrUpdate(Score object) throws SQLException {
         if (object.getId() == null) {
@@ -91,6 +118,11 @@ public class ScoreDao implements Dao<Score, Integer> {
         }
     }
 
+    /**
+     * Retrieves all scores from database
+     * @return List of all scores
+     * @throws SQLException 
+     */
     @Override
     public List<Score> findAll() throws SQLException {
         List<Score> scores = new ArrayList<>();
@@ -110,6 +142,12 @@ public class ScoreDao implements Dao<Score, Integer> {
         return scores;
     }
 
+    /**
+     * Finds score matching to the given id.
+     * @param key Given id
+     * @return Score matching to the given id.
+     * @throws SQLException 
+     */
     @Override
     public Score findOne(Integer key) throws SQLException {
         Connection conn = database.getConnection();
@@ -133,6 +171,11 @@ public class ScoreDao implements Dao<Score, Integer> {
         return score;
     }
 
+    /**
+     * Retrieves the ten best scores from database
+     * @return Top10 scores from the database.
+     * @throws SQLException 
+     */
     public List<Score> findTop10() throws SQLException {
         List<Score> scores = new ArrayList<>();
         Connection connection = database.getConnection();

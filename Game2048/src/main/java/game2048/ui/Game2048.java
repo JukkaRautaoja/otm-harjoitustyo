@@ -167,7 +167,9 @@ public class Game2048 extends Application {
         window.show();
     }
 
-    //makes sure that board is updated
+    /**
+     * Makes sure that board is updated.
+     */
     public GridPane updateBoard() {
         GridPane buttonLay = new GridPane();
         for (int x = 1; x <= 4; x++) {
@@ -193,7 +195,11 @@ public class Game2048 extends Application {
         return buttonLay;
     }
 
-    //adds result to database
+    /**
+     * Adds given result to database.
+     * @param playerName name of the player
+     * @param maxScore player's score
+     */
     public void addToDatabase(String playerName, int maxScore) throws Exception {
         File file = new File("db", "scores.db");
         Database database = new Database("jdbc:sqlite:" + file.getAbsolutePath());
@@ -201,7 +207,9 @@ public class Game2048 extends Application {
         scoreDao.saveOrUpdate(new Score(null, playerName, maxScore));
     }
 
-    //gets top10 best scores and the corresponding players
+    /**
+     * Gets top10 best scores and the corresponding players.
+     */
     public String getTop10() throws Exception {
         File file = new File("db", "scores.db");
         Database database = new Database("jdbc:sqlite:" + file.getAbsolutePath());

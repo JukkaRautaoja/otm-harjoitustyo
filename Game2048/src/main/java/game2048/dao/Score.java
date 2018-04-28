@@ -14,7 +14,12 @@ public class Score {
     private Integer id;
     private String name;
     private Integer maxScore;
-
+    /**
+     * Constructor for Score.
+     * @param id
+     * @param name
+     * @param max 
+     */
     public Score(Integer id, String name, Integer max) {
         this.id = id;
         this.name = name;
