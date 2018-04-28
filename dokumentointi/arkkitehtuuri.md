@@ -45,4 +45,6 @@ Tässä osiossa on sekvenssikaaviot pelin päätoiminnallisuuksille selventämä
 Ylöspäin liikkumisen sekvenssikaavio.
 
 ![Sekvenssikaavio moveUp](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/moveupsek.png)
+![sekvenssikaavio end](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/endgamesek.png)
+![db score lisäys](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/addtodbsek.png)
 
