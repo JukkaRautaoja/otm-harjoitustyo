@@ -46,11 +46,17 @@ Ylöspäin liikkumisen sekvenssikaavio:
 
 ![Sekvenssikaavio moveUp](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/moveupsek.png)
 
-Pelin loppumisen tarkistus sekvenssikaavio:
+Ylösliikkuessa siis lautapäivitetään moveUp() metodilla, joka kutsuu itselleen checkMax() ja newValue() metodeja. Mikäli uuden arvon voi generoida palauttaa newValue() truen ja muuten falsen. On oleellista huomata että lauta saattaa olla täynnä, mutta peli ei kuitenkaan päättynyt, joten tämä on oleellista.
+
+Pelin loppumisen tarkistus sekvenssikaavio tilanteessa jossa voidaan tehdä siirtoja yhä:
 
 ![sekvenssikaavio end](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/endgamesek.png)
+
+Peli kutsuu laudalle metodia end(), ja jos peli on loppu palauttaa se truen muuten falsen. Metodi on itsessään kompleksinen, mutta sekvenssikaavio jää yksinkertaiseksi johtuen metodin luonteesta tehdä monta tarkastusta.
 
 Tietokantaan tuloksen lisäämisen sekvenssikaavio:
 
 ![db score lisäys](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/addtodbsek.png)
+
+Main pyydetään lisätä pelaajan tulos. Luodaan ScoreDao olio, joka hoitaa tiedontallenuksen tietokantaan *saveOrUpdate()* ja *save()* metodien avulla. Lopuksi palautetaan tallennetun pelaajan tiedot.
 
