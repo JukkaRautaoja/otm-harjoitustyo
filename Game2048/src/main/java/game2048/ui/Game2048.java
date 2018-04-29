@@ -98,9 +98,7 @@ public class Game2048 extends Application {
         //actions
         //goes to add result view
         addResult.setOnAction((event) -> {
-            //if (board.end()){
             window.setScene(view2);
-            //}
         });
 
         //goes back to first view and doesnt add result
@@ -144,21 +142,23 @@ public class Game2048 extends Application {
 
         //move actions
         view1.setOnKeyPressed((event) -> {
-            if (event.getCode().equals(KeyCode.UP)) {
-                board.moveUp();
-                mainLay.setCenter(updateBoard());
+            if (!board.end()){
+                if (event.getCode().equals(KeyCode.UP)) {
+                    board.moveUp();
+                    mainLay.setCenter(updateBoard());
 
-            } else if (event.getCode().equals(KeyCode.DOWN)) {
-                board.moveDown();
-                mainLay.setCenter(updateBoard());
+                } else if (event.getCode().equals(KeyCode.DOWN)) {
+                    board.moveDown();
+                    mainLay.setCenter(updateBoard());
 
-            } else if (event.getCode().equals(KeyCode.LEFT)) {
-                board.moveLeft();
-                mainLay.setCenter(updateBoard());
+                } else if (event.getCode().equals(KeyCode.LEFT)) {
+                    board.moveLeft();
+                    mainLay.setCenter(updateBoard());
 
-            } else if (event.getCode().equals(KeyCode.RIGHT)) {
-                board.moveRight();
-                mainLay.setCenter(updateBoard());
+                } else if (event.getCode().equals(KeyCode.RIGHT)) {
+                    board.moveRight();
+                    mainLay.setCenter(updateBoard());
+                }
             }
         });
 
