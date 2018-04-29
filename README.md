@@ -16,7 +16,7 @@ Tämä on ohjelmistotekniikan menetelmien harjoitustyö. Aiheena on peli 2048, j
 
 ### Releaset
 
-[release jar tiedostolle](https://github.com/JukkaRautaoja/otm-harjoitustyo/releases/tag/viikko5)
+[Viikko5](https://github.com/JukkaRautaoja/otm-harjoitustyo/releases/tag/viikko5)
 
 ### Komentorivitoiminnot
 #### Testaus
