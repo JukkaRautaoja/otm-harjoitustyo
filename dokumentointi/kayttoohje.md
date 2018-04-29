@@ -16,6 +16,8 @@ yhdistyvät osuessaan toisiinsa. Liikuttaminen tapahtuu nuolinäppäimillä
 (up, down, left, right). Painaessaan jotain näistä kaikki luvut 
 liikkuvat niin pitkälle siihen suuntaan kuin vain on mahdollista ja yhdistyvät mikäli voivat.
 
+Pelissä on lisäksi vaikea *hardcore*-vaikeustaso, jonka saa päälle ja pois päältä painamalla *Psychosis*-nappia. Se aiheuttaa ruudukon jokaisen yksittäisen ruudun värin satunnaisgeneroinnin jokaisen siirron jälkeen sen sijaan, että ne olisivat koko ajan punaisia. Tästä myös selittyy napin nimi.
+
 ![pelinakyma](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/pelinakyma.png)
 
 ### Tuloksen tallentaminen
