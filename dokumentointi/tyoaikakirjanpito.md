@@ -11,4 +11,4 @@ Päivä | Aika | Mitä tein
 22.4. | 3 | Testit 100% kattavuuteen ja scoreDaon parantelu.
 23.4. | 0,5 | Punaiset värit nappeihin ja jarin generointi.
 29.4. | 2 | Hardcore moodin lisäys ja projektin yleinen kaunistelu väreillä.
-Total | 27,5 | Total time used for the project.
+Total | 29,5 | Total time used for the project.
