@@ -10,5 +10,5 @@ Päivä | Aika | Mitä tein
 17.4. | 0,5 | Pelin lopun tarkastustesti päivitetty.
 22.4. | 3 | Testit 100% kattavuuteen ja scoreDaon parantelu.
 23.4. | 0,5 | Punaiset värit nappeihin ja jarin generointi.
-29.4. | 2 | Hardcore moodin lisäys ja projektin yleinen kaunistelu väreillä.
-Total | 29,5 | Total time used for the project.
+29.4. | 2,5 | Hardcore moodin lisäys ja projektin yleinen kaunistelu väreillä.
+Total | 30 | Total time used for the project.
