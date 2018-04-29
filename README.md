@@ -2,7 +2,7 @@
 
 ### Harjoitustyö
 
-Tämä on ohjelmistotekniikan menetelmien harjoitustyö. Aiheena on peli 2048, jossa pelaaja liikuttaa 4x4 ruudukossa lukuja tavoitteena saada luku 2048 vähintään yhteen ruutuun. Sama luvut yhdistyvät "törmätessään" toisiinsa muodostaen niiden summan jälkimmäiseen ruutuun liikkumissuunnan mukaisesti. 
+Tämä on ohjelmistotekniikan menetelmien harjoitustyö. Aiheena on peli 2048, jossa pelaaja liikuttaa 4x4 ruudukossa lukuja tavoitteena saada luku 2048 vähintään yhteen ruutuun. Samat luvut yhdistyvät "törmätessään" toisiinsa muodostaen niiden summan jälkimmäiseen ruutuun liikkumissuunnan mukaisesti. 
 
 ### Dokumentointi
 
