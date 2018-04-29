@@ -56,7 +56,7 @@ public class Game2048 extends Application {
     public void start(Stage window) {
         //first view
         BorderPane mainLay = new BorderPane();
-        Label mainHeader = new Label("2048 Your goal is to get tile with number 2048 on it");
+        Label mainHeader = new Label("Your goal is to get tile with number 2048");
         mainLay.setTop(mainHeader);
         Button toHighscore = new Button("Highscores");
         toHighscore.setStyle("-fx-base: #FFDF00");
@@ -186,6 +186,10 @@ public class Game2048 extends Application {
                     board.moveRight();
                     mainLay.setCenter(updateBoard());
                 }
+            }else if (board.getMax()==2048){
+                mainHeader.setText("You won!");
+            }else{
+                mainHeader.setText("Game over!");
             }
         });
 
