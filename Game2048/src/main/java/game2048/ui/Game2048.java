@@ -14,6 +14,7 @@ import java.sql.*;
 import com.sun.prism.paint.Color;
 import java.io.File;
 import java.util.List;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.scene.control.Button;
@@ -42,7 +43,12 @@ import javafx.stage.Stage;
 public class Game2048 extends Application {
 
     private Board board = new Board();
-
+    private boolean hardcoreMode = false;
+    private Random random = new Random();
+    private String[] colors = new String[]{"-fx-base: #FFDF00", "-fx-base: #87CEFA", 
+        "-fx-base: #9400D3", "-fx-base: #006400", "-fx-base: #ee2211", "-fx-base: #0000FF", 
+        "-fx-base: #5F9EA0", "-fx-base: #800000", "-fx-base: #DB7093"};
+    
     public static void main(String[] args) {
         launch(Game2048.class);
     }
@@ -53,24 +59,35 @@ public class Game2048 extends Application {
         Label mainHeader = new Label("2048 Your goal is to get tile with number 2048 on it");
         mainLay.setTop(mainHeader);
         Button toHighscore = new Button("Highscores");
+        toHighscore.setStyle("-fx-base: #FFDF00");
         mainLay.setRight(toHighscore);
         Button addResult = new Button("Add score");
-        mainLay.setLeft(addResult);
+        addResult.setStyle("-fx-base: #87CEFA");
+        VBox addChangeModeButtons = new VBox();
+        Button changeMode = new Button("Psychosis");
+        changeMode.setStyle("-fx-base: #9400D3");
+        addChangeModeButtons.getChildren().addAll(addResult, changeMode);
+        mainLay.setLeft(addChangeModeButtons);
+        
 
         //second view
         VBox addNameLay = new VBox();
         Label header2 = new Label("Write your name");
         TextField field = new TextField("");
         Button addPlayerResult = new Button("Add");
+        addPlayerResult.setStyle("-fx-base: #006400");
         Button cancel = new Button("Cancel");
+        cancel.setStyle("-fx-base: #ee2211");
         HBox buttonsLay2 = new HBox();
         buttonsLay2.getChildren().addAll(addPlayerResult, cancel);
         addNameLay.getChildren().addAll(header2, field, buttonsLay2);
 
         //third view
         BorderPane highscores = new BorderPane();
-        Label header3 = new Label("Here is the top 10 players and their max tile");
+        Label header3 = new Label("Here is the top 10 players and their max score:");
+        highscores.setStyle("-fx-base: #FFDF00");
         Button rePlay = new Button("Replay");
+        rePlay.setStyle("-fx-base: #006400");
         highscores.setTop(header3);
         highscores.setRight(rePlay);
 
@@ -105,7 +122,16 @@ public class Game2048 extends Application {
         cancel.setOnAction((event) -> {
             window.setScene(view1);
         });
-
+        
+        //sets hardcoremode on or off
+        changeMode.setOnAction((event) -> {
+            if (hardcoreMode){
+                hardcoreMode=false;
+            }else{
+                hardcoreMode=true;
+            }
+        });
+        
         //goes to highscore from first view
         toHighscore.setOnAction((event) -> {
             try {
@@ -119,6 +145,7 @@ public class Game2048 extends Application {
 
         //restarts the game
         rePlay.setOnAction((event) -> {
+            hardcoreMode=false;
             board.restart();
             mainLay.setCenter(updateBoard());
             window.setScene(view1);
@@ -176,7 +203,11 @@ public class Game2048 extends Application {
             for (int y = 1; y <= 4; y++) {
                 String helper = String.valueOf(board.getBoard()[x - 1][y - 1]);
                 Button a = new Button(helper);
+                if (hardcoreMode){
+                    a.setStyle(colors[random.nextInt(8)]);
+                }else{
                 a.setStyle("-fx-base: #ee2211;");
+                }
                 a.setMinSize(80, 80);
                 a.setMaxSize(80, 80);
                 a.setPrefSize(80, 80);
