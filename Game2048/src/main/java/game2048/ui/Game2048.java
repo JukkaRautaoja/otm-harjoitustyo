@@ -47,7 +47,8 @@ public class Game2048 extends Application {
     private Random random = new Random();
     private String[] colors = new String[]{"-fx-base: #FFDF00", "-fx-base: #87CEFA", 
         "-fx-base: #9400D3", "-fx-base: #006400", "-fx-base: #ee2211", "-fx-base: #0000FF", 
-        "-fx-base: #5F9EA0", "-fx-base: #800000", "-fx-base: #DB7093"};
+        "-fx-base: #00BFFF", "-fx-base: #800000", "-fx-base: #DB7093", "-fx-base: #FF0099", 
+        "-fx-base: #33FF00", "-fx-base: #33FFF5", "-fx-base: #FF00FF"};
     
     public static void main(String[] args) {
         launch(Game2048.class);
@@ -208,7 +209,7 @@ public class Game2048 extends Application {
                 String helper = String.valueOf(board.getBoard()[x - 1][y - 1]);
                 Button a = new Button(helper);
                 if (hardcoreMode){
-                    a.setStyle(colors[random.nextInt(8)]);
+                    a.setStyle(colors[random.nextInt(12)]);
                 }else{
                 a.setStyle("-fx-base: #ee2211;");
                 }
