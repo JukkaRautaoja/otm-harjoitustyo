@@ -4,6 +4,8 @@
 
 Ohjelman rakenteessa on kolmetasoa kerrosarkkitehtuuria, ja koodin pakkausrakenne on seuraavanlainen. Pakkaus *game2048.ui* sisältää JavaFX:llä toteutetun käyttöliittymän *game2048.domain* sovelluslogiikan ja *game2048.dao* tietojen pysyväistallennuksesta vastaavan koodin tietokantaa hyödyntäen.
 
+![kansiot](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/kansiokaavio.png)
+
 ### Käyttöliittymä
 
 Käyttöliittymä sisältää kolme erillsitä näkymää. Itse pelin pelaamisnäkymän, jossa pelaaja liikutteelee numeroita ruudukossa, tuloksen lisäysnäkymän, jolla pelaaja voi lisätä tuloksensa tietokantaan ja tulosnäkymän, jossa pelaaja voi katsoa 10 parasta tulosta. 
