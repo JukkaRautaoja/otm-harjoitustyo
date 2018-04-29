@@ -14,7 +14,7 @@ Pelin avatessa aukeaa pelinäkymä. Tarkoituksena on liikutella numeroita
 ja yhdistää niitä niin että laudalla on luku 2048. Samat luvut 
 yhdistyvät osuessaan toisiinsa. Liikuttaminen tapahtuu nuolinäppäimillä 
 (up, down, left, right). Painaessaan jotain näistä kaikki luvut 
-liikkuvat niin pitkälle siihen suuntaan kuin vain on mahdollista.
+liikkuvat niin pitkälle siihen suuntaan kuin vain on mahdollista ja yhdistyvät mikäli voivat.
 
 ### Tuloksen tallentaminen
 
