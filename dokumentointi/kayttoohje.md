@@ -31,5 +31,5 @@ pelinäkymästä *Highscores*-napilla.
 
 ### Uudelleen pelaaminen
 
-Pelin voi aloittaa uudestaan *Highscores*-näkymän *Replay*-napilla, 
+Pelin voi aloittaa uudestaan *Highscores*-näkymän *Replay*-napilla 
 milloin vain.  
