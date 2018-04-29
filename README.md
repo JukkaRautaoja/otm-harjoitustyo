@@ -8,6 +8,8 @@ Tämä on ohjelmistotekniikan menetelmien harjoitustyö. Aiheena on peli 2048, j
 
 [arkkitehtuuri.md](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
+[kayttoohje.md](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kayttoohje.md)
+
 [tyoaikakirjanpito.md](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
 
 [release jar tiedostolle](https://github.com/JukkaRautaoja/otm-harjoitustyo/releases/tag/viikko5)
