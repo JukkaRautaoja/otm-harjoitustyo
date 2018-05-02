@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-import Game2048.dao.Database;
-import Game2048.dao.Score;
-import Game2048.dao.ScoreDao;
+import game2048.dao.Database;
+import game2048.dao.Score;
+import game2048.dao.ScoreDao;
 import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -92,8 +92,7 @@ public class DatabaseTest {
     }
     @Test
     public void findWorks() throws Exception{
-        File file = new File("db", "scores.db");
-        Database database = new Database("jdbc:sqlite:" + file.getAbsolutePath());
+        Database database = new Database("jdbc:sqlite:scores.db");
         ScoreDao scoreDao = new ScoreDao(database);
         assertTrue(scoreDao.findTop10().size()<=10);
         assertTrue(scoreDao.findAll().size()>=scoreDao.findTop10().size());
@@ -103,8 +102,7 @@ public class DatabaseTest {
     }
     @Test
     public void SaveUpdateDelete() throws Exception{
-        File file = new File("db", "scores.db");
-        Database database = new Database("jdbc:sqlite:" + file.getAbsolutePath());
+        Database database = new Database("jdbc:sqlite:scores.db");
         ScoreDao scoreDao = new ScoreDao(database);
         int begin=scoreDao.findAll().size();
         Score helpScore=scoreDao.saveOrUpdate(score);
@@ -116,15 +114,14 @@ public class DatabaseTest {
     }
     @Test
     public void noNegativeIds() throws Exception{
-        File file = new File("db", "scores.db");
-        Database database = new Database("jdbc:sqlite:" + file.getAbsolutePath());
+        Database database = new Database("jdbc:sqlite:scores.db");
         ScoreDao scoreDao = new ScoreDao(database);
         assertEquals(scoreDao.findOne(-1), null);
     }
     
 
     static File databaseFile() {
-        return new File("db", "scores.db");
+        return new File("scores.db");
     }
     
 

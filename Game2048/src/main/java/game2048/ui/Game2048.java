@@ -6,9 +6,7 @@
 package game2048.ui;
 
 import game2048.domain.Board;
-import Game2048.dao.Database;
-import Game2048.dao.Score;
-import Game2048.dao.ScoreDao;
+import game2048.dao.*;
 
 import java.sql.*;
 import com.sun.prism.paint.Color;
@@ -54,6 +52,10 @@ public class Game2048 extends Application {
         launch(Game2048.class);
     }
 
+    /**
+     * Starts the game.
+     * @param window 
+     */
     public void start(Stage window) {
         //first view
         BorderPane mainLay = new BorderPane();
@@ -237,8 +239,7 @@ public class Game2048 extends Application {
      * @param maxScore player's score
      */
     public void addToDatabase(String playerName, int maxScore) throws Exception {
-        File file = new File("db", "scores.db");
-        Database database = new Database("jdbc:sqlite:" + file.getAbsolutePath());
+        Database database = new Database("jdbc:sqlite:scores.db");
         ScoreDao scoreDao = new ScoreDao(database);
         scoreDao.saveOrUpdate(new Score(null, playerName, maxScore));
     }
@@ -247,8 +248,7 @@ public class Game2048 extends Application {
      * Gets top10 best scores and the corresponding players.
      */
     public String getTop10() throws Exception {
-        File file = new File("db", "scores.db");
-        Database database = new Database("jdbc:sqlite:" + file.getAbsolutePath());
+        Database database = new Database("jdbc:sqlite:scores.db");
         ScoreDao scoreDao = new ScoreDao(database);
         List<Score> top10 = scoreDao.findTop10();
 

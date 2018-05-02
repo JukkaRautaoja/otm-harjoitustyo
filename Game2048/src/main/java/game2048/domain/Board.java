@@ -30,7 +30,7 @@ public class Board {
     }
 
     /**
-     * Check largest number in tiles and sets it as current max.
+     * Check largest number in tiles and sets it as the current max.
      */
     public void checkMax() {
         for (int i = 0; i < 4; i++) {
