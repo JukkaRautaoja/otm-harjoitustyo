@@ -87,12 +87,16 @@ public class Game2048 extends Application {
 
         //third view
         BorderPane highscores = new BorderPane();
+        VBox buttonsLay3 = new VBox();
         Label header3 = new Label("Here is the top 10 players and their max score:");
         highscores.setStyle("-fx-base: #FFDF00");
         Button rePlay = new Button("Replay");
+        Button returnView1 = new Button("Return");
+        returnView1.setStyle("-fx-base: #00BFFF");
         rePlay.setStyle("-fx-base: #006400");
         highscores.setTop(header3);
-        highscores.setRight(rePlay);
+        buttonsLay3.getChildren().addAll(rePlay, returnView1);
+        highscores.setRight(buttonsLay3);
 
         //buttons for first view
         GridPane buttonLay = new GridPane();
@@ -151,6 +155,11 @@ public class Game2048 extends Application {
             hardcoreMode=false;
             board.restart();
             mainLay.setCenter(updateBoard());
+            window.setScene(view1);
+        });
+        
+        //Returns back to the game
+        returnView1.setOnAction((event) -> {
             window.setScene(view1);
         });
 
