@@ -13,13 +13,12 @@ tarkoitus on haastavuudellaan viihdyttää pelaajaa.
 ##### Käyttäjä
 * Käyttäjä voi lisätä tuloksensa tietokantaan. 
 * Käyttäjä voi katsoa top10 tulokset.
-* Käyttäjä voi aloittaa uuden pelin lisättyään tuloksensa.   
-* Käyttäjä voi palata peliin lisäysruudusta.
-* Peliin sinänsä voisi keksiä muitakin toiminnallisuuksia, mutta nämä 
-riittävät hyvin toimivaan ja mielyttävään peliin. 
+* Käyttäjä voi aloittaa uuden pelin lisättyään tuloksensa tai milloin vain halutessaan.   
+* Käyttäjä voi palata peliin lisäysruudusta tai tulosruudusta.
+* Pelissä on vaikeampi "psychosis" vaikeustaso, jossa ruudukko vaihtelee värejä satunnaisesti.
 ###### Ylläpitäjä
 * Ylläpitäjä voi poistaa tuloksia tietokannasta.
 * Ylläpitäjä voi muokata pelin lähtöasetelmaa.
 ###### Toimintaympäristön rajoitteet
 * Tieto tallentuu koneen kovalevylle tietokantaan
-* Työ on maven projekti, joten vaatii javan ja mavenin toimiakseen.
+* Työ on maven projekti, joten se vaatii javan ja mavenin toimiakseen.
