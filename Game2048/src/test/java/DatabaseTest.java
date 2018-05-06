@@ -91,14 +91,24 @@ public class DatabaseTest {
         }
     }
     @Test
-    public void findWorks() throws Exception{
+    public void findOne() throws Exception{
         Database database = new Database("jdbc:sqlite:scores.db");
         ScoreDao scoreDao = new ScoreDao(database);
-        assertTrue(scoreDao.findTop10().size()<=10);
-        assertTrue(scoreDao.findAll().size()>=scoreDao.findTop10().size());
         Score helpScore=scoreDao.saveOrUpdate(score);
         assertTrue(scoreDao.findOne(helpScore.getId()).getName().equals("Wizard"));
         scoreDao.delete(helpScore.getId());
+    }
+    @Test
+    public void findAll() throws Exception{
+        Database database = new Database("jdbc:sqlite:scores.db");
+        ScoreDao scoreDao = new ScoreDao(database);
+        assertTrue(scoreDao.findAll().size()>=scoreDao.findTop10().size());
+    }
+    @Test 
+    public void findTop10() throws Exception{
+        Database database = new Database("jdbc:sqlite:scores.db");
+        ScoreDao scoreDao = new ScoreDao(database);
+        assertTrue(scoreDao.findTop10().size()<=10);
     }
     @Test
     public void SaveUpdateDelete() throws Exception{
@@ -107,10 +117,9 @@ public class DatabaseTest {
         int begin=scoreDao.findAll().size();
         Score helpScore=scoreDao.saveOrUpdate(score);
         int secondSize=scoreDao.findAll().size();
-        assertTrue(begin<secondSize);
         scoreDao.saveOrUpdate(new Score(helpScore.getId(), helpScore.getName(), 400));
         scoreDao.delete(helpScore.getId());
-        assertTrue(begin==scoreDao.findAll().size());
+        assertTrue(begin==scoreDao.findAll().size() && begin<secondSize);
     }
     @Test
     public void noNegativeIds() throws Exception{

@@ -134,48 +134,60 @@ public class Game2048Test {
         assertFalse(board.end());
     }
     @Test
-    public void gameHasHasNotEndedv4(){
-        board.getBoard()[2][2]=4;
-        board.getBoard()[2][3]=4;
-        board.getBoard()[3][2]=4;
-        board.getBoard()[3][1]=4;
-        assertFalse(board.end());
-        board.restart();
+    public void notEnd(){
         board.getBoard()[2][0]=4;
         board.getBoard()[3][0]=4;
         board.getBoard()[3][1]=4;
         board.getBoard()[3][2]=4;
         assertFalse(board.end());
-        board.restart();
+    }
+    @Test
+    public void notEnd2(){
         board.getBoard()[2][3]=4;
         board.getBoard()[3][3]=4;
         board.getBoard()[3][1]=4;
         board.getBoard()[3][2]=4;
         assertFalse(board.end());
-        board.restart();
+    }
+    @Test
+    public void notEnd3(){
         board.getBoard()[3][0]=4;
         board.getBoard()[2][1]=4;
         board.getBoard()[3][1]=4;
         board.getBoard()[3][2]=4;
         assertFalse(board.end());
-        board.restart();
+    }
+    @Test
+    public void notEnd4(){
         board.getBoard()[3][3]=4;
         board.getBoard()[2][3]=4;
         board.getBoard()[1][3]=4;
         board.getBoard()[3][2]=4;
         board.getBoard()[3][1]=4;
-        assertFalse(board.end());
-        board.restart();
+        assertFalse(board.end());       
+    }
+    @Test
+    public void notEnd5(){
         board.getBoard()[1][3]=4;
         board.getBoard()[1][2]=4;
         board.getBoard()[3][1]=4;
         board.getBoard()[2][1]=4;
         board.getBoard()[3][0]=4;
         assertFalse(board.end());
-        board.restart();
+    }
+     @Test
+    public void notEnd6(){
         board.getBoard()[3][3]=4;
         board.getBoard()[2][2]=4;
         board.getBoard()[1][1]=4;
+        board.getBoard()[3][2]=4;
+        board.getBoard()[3][1]=4;
+        assertFalse(board.end());
+    }
+    @Test
+    public void notEnd7(){
+        board.getBoard()[2][2]=4;
+        board.getBoard()[2][3]=4;
         board.getBoard()[3][2]=4;
         board.getBoard()[3][1]=4;
         assertFalse(board.end());
