@@ -35,7 +35,7 @@ Toimintaa kuvaava luokka/pakkauskaavio:
 
 ### Tiedon pysyväistallennus
 
-Tiedontallennuksen koodin toteutus löytyy game2048.dao kansiosta eli tietokantaan tallentava koodi *dao-rajapinnan* avulla tehtynä. Piste *Score* olio, pelaajan tulos pelissä, lisätään tietokantaan hyödyntäen *ScoreDao-luokkaa* ja sen metodeja kuten *saveOrUpdate()*. Kyseinen metodi tallentaan tuloksen tietokantaan, mikäli se ei jo ole siellä eli sille ei ole määritetty pääavainta tunnisteeksi. 
+Tiedontallennuksen koodin toteutus löytyy game2048.dao kansiosta eli tietokantaan tallentava koodi *dao-rajapinnan* avulla tehtynä. Tietokantana käytetään Sql-tietokantaa, jossa on *Score* taulu. Piste *Score* olio, pelaajan tulos pelissä, lisätään tietokantaan hyödyntäen *ScoreDao-luokkaa* ja sen metodeja kuten *saveOrUpdate()*. Kyseinen metodi tallentaan tuloksen tietokantaan, mikäli se ei jo ole siellä eli sille ei ole määritetty pääavainta tunnisteeksi. 
 
 *ScoreDaolla* pystytään myös poistamaan, päivittämään ja hakemaan tietoa tietokannasta. Hakeminen voidaan toteuttaa monella tapaa kuten hakemalla yksittäistä tiettyä tulosta, kymmentä parasta tulosta tai sitten kaikki tulokset, mitä on tallennettu tietokantaan.  
 
