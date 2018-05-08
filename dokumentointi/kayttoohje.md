@@ -16,9 +16,12 @@ yhdistyvät osuessaan toisiinsa. Liikuttaminen tapahtuu nuolinäppäimillä
 (up, down, left, right). Painaessaan jotain näistä kaikki luvut 
 liikkuvat niin pitkälle siihen suuntaan kuin vain on mahdollista ja yhdistyvät mikäli voivat.
 
+![pelinakyma](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/pelinakyma.png)
+
 Pelissä on lisäksi vaikea *hardcore*-vaikeustaso, jonka saa päälle ja pois päältä painamalla *Psychosis*-nappia. Se aiheuttaa ruudukon jokaisen yksittäisen ruudun värin satunnaisgeneroinnin jokaisen siirron jälkeen sen sijaan, että ne olisivat koko ajan punaisia. Tästä myös selittyy napin nimi.
 
-![pelinakyma](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/pelinakyma.png)
+![hc-nakyma](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/psykoosinakyma.png)
+
 
 ### Tuloksen tallentaminen
 
@@ -40,4 +43,4 @@ pelinäkymästä *Highscores*-napilla.
 Pelin voi aloittaa uudestaan *Highscores*-näkymän *Replay*-napilla 
 milloin vain.  
 
-![pistenakyma](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/pistenakyma.png)
+![pistenakyma](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/paivitettyScoreNakyma.png)
