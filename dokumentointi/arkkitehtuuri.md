@@ -14,6 +14,8 @@ Käyttöliittymä sisältää kolme erillsitä näkymää. Itse pelin pelaamisn�
 
 Jokainen näkymä on oma *Scene-olio* ja ne ovat yksittellen näkyvillä stagella riippuen siitä millä näkymällä ollaan. Kaikki näkymät ovat toteutettuna game2048.ui kansiossa. Käyttöliittymä on haluttu eristää sovelluslogiikasta, joten se vain kutsuu *game2048.domain* kansiosta metodeja. Käyttöliittymän tarkoituksena on vain näyttää ruudukko ja sen muutokset eli siis toimia itse pelinä ei sen enempää.
 
+![käyttöliittymä](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/pelinakyma.png)
+
 ### Sovelluslogiikka
 
 Sovelluslogiikka on pyritty eristämään kokonaan käyttäliittymästä ja löytyy täten *game2048.domain* kansiosta toteutettuna. Se on pitkälti pelilaudan ja sen metodien toteutus. Peli muutenkin oleellisesti keskittyy lautaan ja sen ylläpitoon ja tallessapitoon, joten on erittäin fiksua pitää sovelluslogiikka erossa käyttöliittymästä. 
