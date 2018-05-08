@@ -36,7 +36,7 @@ pelinäkymän siihen mihin se on jäänyt.
 
 Tuloksen lisättyä pelaaja siirtyy suoraan parhaiden tulosten näkymään, 
 jossa näkyy kymmenen parasta pelaajaa pisteineen. Näkymään pääsee myös 
-pelinäkymästä *Highscores*-napilla. Näkymästä pääsee *return*-napilla takaisin peliin, jota oli pelaamassa.
+pelinäkymästä *Highscores*-napilla. Näkymästä pääsee *Return*-napilla takaisin peliin, jota oli pelaamassa.
 
 ### Uudelleen pelaaminen
 
