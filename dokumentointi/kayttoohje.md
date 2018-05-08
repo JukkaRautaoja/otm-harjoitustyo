@@ -36,11 +36,11 @@ pelinäkymän siihen mihin se on jäänyt.
 
 Tuloksen lisättyä pelaaja siirtyy suoraan parhaiden tulosten näkymään, 
 jossa näkyy kymmenen parasta pelaajaa pisteineen. Näkymään pääsee myös 
-pelinäkymästä *Highscores*-napilla.
+pelinäkymästä *Highscores*-napilla. Näkymästä pääsee *return*-napilla takaisin peliin, jota oli pelaamassa.
 
 ### Uudelleen pelaaminen
 
 Pelin voi aloittaa uudestaan *Highscores*-näkymän *Replay*-napilla 
-milloin vain.  
+milloin vain pelaajan niin tahtoessaan.  
 
 ![pistenakyma](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/paivitettyScoreNakyma.png)
