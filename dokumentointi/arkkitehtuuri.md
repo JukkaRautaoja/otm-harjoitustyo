@@ -39,7 +39,7 @@ Tiedontallennuksen koodin toteutus löytyy game2048.dao kansiosta eli tietokanta
 
 *ScoreDaolla* pystytään myös poistamaan, päivittämään ja hakemaan tietoa tietokannasta. Hakeminen voidaan toteuttaa monella tapaa kuten hakemalla yksittäistä tiettyä tulosta, kymmentä parasta tulosta tai sitten kaikki tulokset, mitä on tallennettu tietokantaan. 
 
-Pelin pistenäkymä, joka hakee parhaat tulokset tietokannasta sekä lisäysnäkymä pisteen lisäämistä varten:
+Pelin pistenäkymä, joka hakee parhaat tulokset tietokannasta, ja lisäysnäkymä pisteen lisäämistä varten:
 
 ![pistenakyma](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/paivitettyScoreNakyma.png)
 ![lisaysnakyma](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/lisaysnakyma.png)
