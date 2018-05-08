@@ -1,6 +1,6 @@
 ## Käyttöohje
 
-Lataa tiedosto [Game2048.jar](https://github.com/JukkaRautaoja/otm-harjoitustyo/releases/download/viikko5/Game2048-1.0-SNAPSHOT.jar).
+Lataa tiedosto [Game2048.jar](https://github.com/JukkaRautaoja/otm-harjoitustyo/releases/download/viikko7/Game2048-1.0-SNAPSHOT.jar).
 
 ### Ohjelman käynnistäminen
 
