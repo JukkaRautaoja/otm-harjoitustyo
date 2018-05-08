@@ -43,6 +43,9 @@ public class Game2048 extends Application {
     private Board board = new Board();
     private boolean hardcoreMode = false;
     private Random random = new Random();
+    /**
+     * This list is used for random generating colors for the hardcore mode.
+     */
     private String[] colors = new String[]{"-fx-base: #FFDF00", "-fx-base: #87CEFA", 
         "-fx-base: #9400D3", "-fx-base: #006400", "-fx-base: #ee2211", "-fx-base: #0000FF", 
         "-fx-base: #00BFFF", "-fx-base: #800000", "-fx-base: #DB7093", "-fx-base: #FF0099", 
