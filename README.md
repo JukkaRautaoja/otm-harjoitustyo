@@ -24,7 +24,7 @@ Tämä on ohjelmistotekniikan menetelmien harjoitustyö. Aiheena on peli 2048, j
 #### Testaus
 Testit suoritetaan komennolla:
 
-`<addr>` *mvn test*
+<addr> '*mvn test*'
 
 Testikattavuusraportti luodaan komennolla:
 
