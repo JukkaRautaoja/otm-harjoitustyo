@@ -12,4 +12,5 @@ Päivä | Aika | Mitä tein
 23.4. | 0,5 | Punaiset värit nappeihin ja jarin generointi.
 29.4. | 2,5 | Hardcore moodin lisäys ja projektin yleinen kaunistelu väreillä.
 2.5. | 3 | Tietokannan toimivuuden säätö jar-tiedostolle.
-Total | 33 | Total time used for the project.
+8.5. | 1 | Viimeisiä hienosäätöjä
+Total | 34 | Total time used for the project.
