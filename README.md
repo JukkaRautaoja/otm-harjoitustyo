@@ -28,20 +28,20 @@ Testit suoritetaan komennolla:
 
 Testikattavuusraportti luodaan komennolla:
 
-*mvn test jacoco:report*
+> *mvn test jacoco:report*
 ####  Jarin generointi
 
 Komento "*mvn package*" generoi hakemistoon target suoritettavan jar-tiedoston Game2048-1.0-SNAPSHOT.jar
 #### JavaDoc
 JavaDoc generoidaan komennolla:
 
-*mvn javadoc:javadoc*
+> *mvn javadoc:javadoc*
 
 JavaDocia voi tarkastella avaamalla selaimella tiedosto target/site/apidocs/index.html
 #### Checkstyle
 Tiedostoon checkstyle.xml määrittelemät tarkistukset suoritetaan komennolla:
 
-*mvn jxr:jxr checkstyle:checkstyle*
+> *mvn jxr:jxr checkstyle:checkstyle*
  
 Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedoston target/site/checkstyle.html
 
