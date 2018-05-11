@@ -12,6 +12,8 @@ Tämä on ohjelmistotekniikan menetelmien harjoitustyö. Aiheena on peli 2048, j
 
 [kayttoohje.md](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kayttoohje.md)
 
+[testaus.md](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/testaus.md)
+
 [tyoaikakirjanpito.md](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
 
 ### Releaset
