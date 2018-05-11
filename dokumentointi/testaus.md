@@ -20,6 +20,8 @@ testattu ja jälleen selkeästi ja hyvään tapaan.
 Testien kattavuus on laaja kokonaisuudessaan 99% ja haarautuvuus 97%. 
 Kaikkea testataan kuten kuuluukin.
 
+![testikattavuus](https://github.com/JukkaRautaoja/otm-harjoitustyo/blob/master/dokumentointi/kaaviot/jacocojuttu.png)
+
 #### Testien käyttö
 
 Testit voidaan ajaa netbeansin testi-napilla tai käyttöohjeen mukaisesti 
